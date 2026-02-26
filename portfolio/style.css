@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 18px 60px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #333;
+}
+
+.logo i {
+    background-color: #89023e;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #89023e;
+}
+
+.hero {
+    background-color: #f4f4f4;
+    padding: 160px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #0f1e3d;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 60px;
+}
+
+.hero-avatar {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-avatar img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.hero-avatar img:hover {
+    transform: scale(1.05);
+}
+
+.about {
+  background-color: #f4f4f4;
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  width: 50px;
+  height: 4px;
+  background: #89023e;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.subtitle {
+  max-width: 700px;
+  margin: 20px auto 60px;
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.content {
+  display: flex;
+  gap: 60px;
+  text-align: left;
+  justify-content: space-between;
+}
+
+.left-column,
+.right-column {
+  flex: 1;
+}
+
+.left-column h3,
+.right-column h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.left-column p {
+  margin-bottom: 20px;
+  line-height: 1.7;
+  color: #444;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #89023e, #be1f67);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skills span {
+  background-color: #e5e5e5;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.skills span:hover {
+  background-color: #89023e;
+  color: #FFFFFF;
+
+}
+
+
+
+/* Tablet */
+@media (max-width: 1024px) {
+
+  header {
+    padding: 18px 30px;
+  }
+
+  .hero {
+    padding: 120px 20px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .content {
+    gap: 40px;
+  }
+
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  /* NAV */
+  .nav-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  nav ul {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 100px 20px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .hero-avatar img {
+    width: 160px;
+    height: 160px;
+  }
+
+  /* ABOUT */
+  .content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .skills {
+    justify-content: center;
+  }
+
+}
+
+
+/* Mobile pequeno */
+@media (max-width: 480px) {
+
+  header {
+    padding: 15px 20px;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .hero h1 {
+    font-size: 22px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+}
